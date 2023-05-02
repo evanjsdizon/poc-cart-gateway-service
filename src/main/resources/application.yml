@@ -1,0 +1,22 @@
+app:
+  title: Cart Gateway Service API Documentation
+  description: Information on the available endpoints, request format, responses returned, and JSON entities used.
+  version: 1.0.0
+  grpc-host: localhost
+  grpc-port: 8030
+server:
+  port: 8050
+logging:
+  level:
+    com:
+      cd: TRACE
+management:
+  endpoint:
+    health:
+      probes:
+        enabled: true
+  health:
+    livenessstate:
+      enabled: true
+    readinessstate:
+      enabled: true
